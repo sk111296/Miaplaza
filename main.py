@@ -22,3 +22,9 @@ link = (driver.find_element(By.LINK_TEXT, 'Online High School'))
 link.click()
 time.sleep(5)
 
+# apply to MOHS/click on Apply to our school button on the banner
+apply_button_xpath = ("/html//main[@id='main']/div[@class='content-wrap']/article/div[@class='entry-content-wrap']/div/div[2]/div//a"
+                      "[@href='https://forms.zohopublic.com/miaplazahelp/form/MOHSInitialApplication/formperma/okCyt4yyq39rZvSBXB9FSjDeek1ilbRVK1iNCK--3K8']")
+apply_button_locator = driver.find_element(By.XPATH, apply_button_xpath)
+apply_button_locator.click()
+time.sleep(5)

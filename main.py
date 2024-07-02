@@ -8,6 +8,7 @@ proceed to Student Information page
 STOP YOUR TEST HERE"""
 import time
 from selenium import webdriver
+from selenium.webdriver.common.by import By
 
 #open browser
 driver = webdriver.Chrome()
@@ -16,4 +17,8 @@ driver = webdriver.Chrome()
 driver.get("https://miacademy.co/#/")
 time.sleep(5)
 
+#navigate to MiaPrep Online High School through the link on banner
+link = (driver.find_element(By.LINK_TEXT, 'Online High School'))
+link.click()
+time.sleep(5)
 

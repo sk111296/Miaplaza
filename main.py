@@ -14,6 +14,6 @@ driver = webdriver.Chrome()
 
 #navigate to https://miacademy.co/#/
 driver.get("https://miacademy.co/#/")
-time.sleep(10)
+time.sleep(5)
 
 

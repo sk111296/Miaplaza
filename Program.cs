@@ -1,6 +1,8 @@
 ﻿using OpenQA.Selenium; 
 using OpenQA.Selenium.Chrome; 
 using OpenQA.Selenium.Support.UI;
+using OpenQA.Selenium.Interactions;
+
 namespace ParentsForm
 {
     class Miaform
@@ -42,7 +44,6 @@ namespace ParentsForm
 
             Thread.Sleep(2000);
 
-          
             IWebElement number = driver.FindElement(By.Id("PhoneNumber"));
             number.SendKeys("1766767432");
 
@@ -73,8 +74,11 @@ namespace ParentsForm
             IWebElement secparent_phonenum = driver.FindElement(By.Name("PhoneNumber1"));
             secparent_phonenum.SendKeys("1766767454");
 
-            //to scroll page down
-            //-----------------------------------------------------------------------------------------------
+            // scroll page down
+            var name_element = driver.FindElement(By.XPath("//li[@id='Checkbox-li']//div[@role='group']/span[12]/label[@class='checkChoice cusChoiceLabel']/em[@class='cusChoiceEm']"));
+            Actions actions = new(driver);
+            actions.ScrollToElement(name_element);
+            actions.Perform();
 
             //How did you hear about us? (Select all checkbox that apply)
             IWebElement checkbox1 = driver.FindElement(By.XPath("//li[@id='Checkbox-li']//div[@role='group']/span[1]/label[@class='checkChoice cusChoiceLabel']"));
@@ -90,24 +94,26 @@ namespace ParentsForm
             IWebElement checkbox3 = driver.FindElement(By.XPath("//li[@id='Checkbox-li']//div[@role='group']/span[3]/label[@class='checkChoice cusChoiceLabel']"));
             checkbox3.Click();
 
-            Thread.Sleep(2000);
+            Thread.Sleep(1000);
 
-            //to scroll page down
-
+            // scroll to bottom of page
+            actions.SendKeys(Keys.PageDown).Build().Perform();
             Thread.Sleep(1000);
 
             //What is your preferred start date?
-            IWebElement Calendar = driver.FindElement(By.Id("Date-date"));
-            Calendar.Click();
+            IWebElement calendar = driver.FindElement(By.Id("Date-date"));
+            calendar.Click();
             Thread.Sleep(4000);
-            IWebElement Date = driver.FindElement(By.Id("ui-datepicker-div"));
-            IWebElement Start_date = driver.FindElement(By.XPath("//div[@id='ui-datepicker-div']/table[@class='ui-datepicker-calendar']/tbody/tr[4]/td[1]/a[@href='#']"));
-            Start_date.Click();
+            IWebElement start_date = driver.FindElement(By.XPath("//div[@id='ui-datepicker-div']/table[@class='ui-datepicker-calendar']/tbody/tr[4]/td[1]/a[@href='#']"));
+            actions.MoveToElement(start_date);
+            Thread.Sleep(1000);
+            start_date.Click();
 
             Thread.Sleep(3000);
 
             //click on next button to navigate to student information page
             IWebElement next_button = driver.FindElement(By.XPath("/html//li[@id='formAccess']//div[@class='inlineBlock nextAlign']/button[@type='button']"));
+            actions.MoveToElement(next_button);
             next_button.Click();
 
             Thread.Sleep(3000);

@@ -5,7 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0f9ae2c9-1397-4fdd-8c7f-99bd3bdbd227" name="Changes" comment="complete task is ready in python just country code is yet to be implemented for phone number">
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
@@ -62,11 +61,21 @@
       <option name="presentableId" value="Default" />
       <updated>1719934996834</updated>
     </task>
+    <task id="LOCAL-00001" summary="complete task is ready in python just country code is yet to be implemented for phone number">
+      <option name="closed" value="true" />
+      <created>1720010672427</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1720010672427</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="navigate to link via c#" />
     <MESSAGE value="navigate to link" />
-    <option name="LAST_COMMIT_MESSAGE" value="navigate to link" />
+    <MESSAGE value="complete task is ready in python just country code is yet to be implemented for phone number" />
+    <option name="LAST_COMMIT_MESSAGE" value="complete task is ready in python just country code is yet to be implemented for phone number" />
   </component>
 </project>

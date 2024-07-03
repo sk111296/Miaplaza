@@ -45,17 +45,17 @@ last_name.send_keys("Mustermann")
 #enter email id
 email_id = driver.find_element(By.ID, "Email-arialabel")
 email_id.send_keys("max.mustermann@email.com")
-time.sleep(2)
+time.sleep(1)
+
+"""select country code
+CountryCode = driver.find_element(By.CLASS_NAME, "selected-dial-code")
+CountryCode.click()
+time.sleep(5)
+Code = driver.find_element(By.XPATH, "//div[@class='intl-tel-input iti-container']/ul[@class='country-list']/li[@class='country highlight']")
+Code.click()
+time.sleep(1)"""
 
 #enter mobile number
-"""CountryCode = driver.find_element(By.CLASS_NAME, "selected-dial-code")
-CountryCode.click()
-time.sleep(2)
-code=Select(CountryCode)
-code.select_by_visible_text("Germany")
-time.sleep(2)
-Code = driver.find_element(By.XPATH, "//ul[@class='country-list']/li[80]/span[@class='dial-code']")
-Code.click()"""
 number = driver.find_element(By.ID, "PhoneNumber")
 number.send_keys("1766767432")
 

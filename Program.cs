@@ -7,8 +7,10 @@ namespace ParentsForm
     {
         static void Main(string[] args)
         {
+            ChromeOptions options = new();
+            options.AddArguments("--start-maximized");
             //open browser
-            IWebDriver driver = new ChromeDriver();
+            IWebDriver driver = new ChromeDriver(options);
 
             //#navigate to https://miacademy.co/#/
             driver.Navigate().GoToUrl("https://miacademy.co/#/");
@@ -111,7 +113,7 @@ namespace ParentsForm
             Thread.Sleep(3000);
 
             //close the browser
-            driver.Close();
+            driver.Quit();
         }
 
     }

@@ -20,3 +20,4 @@ C:\Users\Gaurav\PycharmProjects\FirstPythonProject\Miaplaza\obj\Debug\net8.0\ref
 C:\Users\Gaurav\PycharmProjects\FirstPythonProject\Miaplaza\obj\Debug\net8.0\Miaplaza.pdb
 C:\Users\Gaurav\PycharmProjects\FirstPythonProject\Miaplaza\obj\Debug\net8.0\Miaplaza.genruntimeconfig.cache
 C:\Users\Gaurav\PycharmProjects\FirstPythonProject\Miaplaza\obj\Debug\net8.0\ref\Miaplaza.dll
+C:\Users\Gaurav\PycharmProjects\FirstPythonProject\Miaplaza\bin\Debug\net8.0\WebDriver.Support.dll

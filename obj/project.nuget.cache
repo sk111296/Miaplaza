@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "U78VvJkjKms=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Gaurav\\PycharmProjects\\FirstPythonProject\\Miaplaza\\Miaplaza.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Gaurav\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512",
+    "C:\\Users\\Gaurav\\.nuget\\packages\\selenium.support\\4.22.0\\selenium.support.4.22.0.nupkg.sha512",
+    "C:\\Users\\Gaurav\\.nuget\\packages\\selenium.webdriver\\4.22.0\\selenium.webdriver.4.22.0.nupkg.sha512"
+  ],
+  "logs": []
+}
